@@ -1,0 +1,74 @@
+.demo1{
+    width: 200px;
+    height: 200px;
+    background-color: navy;
+    animation: demo 5s;
+    border-radius: 50%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes demo{
+    0%{
+        background-color: navy;
+        color: white;
+    }
+    50%{
+        background-color: rgb(128, 0, 0);
+        transform: translateY(200px);
+    }
+    100%{
+        background-color: darkorange;
+        color: blue;
+    }
+}
+.demo2{
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 50px;
+}
+.tiny{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+}
+.ball1{
+    left: 60px;
+    animation-name: random_balls;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+.ball2{
+    right: 100px;
+    animation-name: random_balls;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+}
+@keyframes random_balls{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(450px);
+        background-color: darkcyan;
+    }
+    60%{
+        transform: translateY(200px);
+        background-color: cadetblue;
+    }
+    80%{
+        transform: translateY(450px);
+        background-color: darkblue;
+    }
+    100%{
+
+    }
+}

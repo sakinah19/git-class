@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Media Querry</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        @media screen and (min-width:500px) { /*greater than 500px implement ruleset*/ 
+            body{
+                background-color: pink;
+                color: black;
+            }
+        }
+
+        @media screen and (max-width:800px) { /*less than 800px implement ruleset*/ 
+            body{
+                background-color: red;
+            }
+        }
+    </style>
+</body>
+</html>

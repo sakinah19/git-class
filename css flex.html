@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Module</title>
+    <style>
+        .flex-contain{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-flow: row wrap;
+            background-color: purple;
+            padding: 10px;
+            height: 300px;
+            align-items: flex-end;
+        }
+        .item1{
+            font-size: 1.4em;
+            padding: 12px;
+            text-align: center;
+            background-color: pink;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Use of Flex</h2>
+    <div class="flex-contain">
+        <div class="item1 itemA" style="order: 4;">A</div>
+        <div class="item1" style="order: 7;">B</div>
+        <div class="item1" style="order: 2; flex-grow: 5;">C</div>
+        <div class="item1" style="order: 5; flex-basis: 70px; flex-shrink: 5;">D</div>
+        <div class="item1" style="order: 1;">E</div>
+        <div class="item1" style="order: 8; align-self: flex-start;">F</div>
+    </div>
+</body>
+</html>

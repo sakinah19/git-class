@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Dropdown Menu</title>
+    <style>
+       .dropbutton{
+        background-color: green;
+        color: white;
+        padding: 16px;
+        font-size: 18px;
+        border: none;
+        border-radius: 50%;
+       }
+       .dropdown{
+        position: fixed;
+        right: 10%;
+        display: inline-block;
+       }
+       .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: seagreen;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+       }
+       .dropdown-content a{
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+       }
+       .dropdown-content a:hover{
+        background-color: white;
+        color: seagreen;
+       }
+       .dropdown:hover .dropdown-content{
+        display: block;
+       }
+    </style>
+</head>
+<body>
+<div class="dropdown">
+    <button class="dropbutton">dropdown</button>
+    <div class="dropdown-content">
+        <a href="#">link 1</a>
+        <a href="#">link 2</a>
+        <a href="#">link 3</a>
+    </div>
+</div>
+</body>
+</html>

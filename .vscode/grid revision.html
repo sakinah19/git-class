@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Revision</title>
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    body{
+        background-color: white;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: 400px 300px;
+        justify-content: center;
+        align-items: center;
+    }
+    .row-text{
+        font-size: 18px;
+        line-height: 1.4;
+        text-align: justify;
+    }
+    .row-text > button{
+        background-color: royalblue;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        padding: 8px;
+        border-radius: 8px;
+        color: white;
+    }
+    #you{
+        margin-left: 10px;
+    }
+</style>
+<body>
+    <h2>Hobbies</h2>
+    <div class="grid-contain">
+        <div class="row">
+            <div class="row-img">
+                <img src="purple.jpg" alt="" width="320" height="320">
+            </div>
+            <div class="row-text">
+                <h2>Summary</h2>
+                <em>...what I like to do</em>
+                <p>
+            here are the texts Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum veniam laudantium. Nobis ut expedita itaque ad, a vitae inventore qui officia, doloremque harum magni corrupti architecto, aperiam ea aspernatur!
+                </p>
+                <button>Get Book</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row-text">
+            <h2>Summary 2</h2>
+                <em>...Things of the world</em>
+                <p>
+            here are the texts Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum veniam laudantium. Nobis ut expedita itaque ad, a vitae inventore qui officia, doloremque harum magni corrupti architecto, aperiam ea aspernatur!
+                </p>
+                <button>Get Book</button>
+             </div>
+                <div class="row-img" id="you">
+                    <img src="books.jpg" alt="" width="320" height="320" >
+                </div>
+
+        </div>
+    </div>
+</body>
+</html>

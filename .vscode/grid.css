@@ -1,0 +1,16 @@
+.grid-contain{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 200px;
+    background-color: darkblue;
+    padding: 10px;
+    gap: 8px;
+    align-content: center;
+    height: 100vh;
+}
+.grid-contain> div{
+    color: white;
+    text-align: center;
+    background-color: darkcyan;
+    padding: 12px;
+}

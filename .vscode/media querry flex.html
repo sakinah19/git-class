@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media querry:flex</title>
+    <style>
+        :root{
+            --goldLike: #af3a3c
+        }
+        .contain{
+            display: flex;
+        }
+        .contain > div{
+            background-color: var(--goldLike);
+            margin: 8px;
+            padding: 30px;
+            font-weight: bold;
+        }
+
+        .contain > div:hover{
+            background-color: orange;
+            cursor: pointer;
+        }
+        @media screen and (max-width:430px) {
+            .contain{
+                flex-direction: column;
+            }
+        .contain > div{
+            text-align: center;
+        }
+        .img {
+            display: none;
+        }
+    }
+        
+        @media screen and (max-width:1024px){
+            .contain  > div{
+                width: 100%;
+            }
+        }
+        .img{
+            width: 100vw;
+        }
+        .img img{
+            width: 100%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Flex Layout</h1>
+    <div class="img">
+        <img src="book wallpaper.jpg" alt="">
+    </div>
+    <div class="contain">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Assignment</title>
+    <style>
+        body{
+            background-color: #050a65;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        .star{  
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35% );
+            position: relative;
+            animation: shining 2s infinite;
+            transform: translateX(200px);
+        }
+        .starr{  
+            width: 200px;
+            height: 200px;
+            background-color: rgb(198, 100, 19);
+            position: relative;
+            animation: shining 2s infinite;
+            right: -500px;
+            bottom: 500px;
+        }
+        .stardrink{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(250, 247, 248);
+            animation: shining 3s 5s infinite ease-in-out;
+            right: -500px;
+            top: 100px;
+        }
+        .starlink{
+            width: 40px;
+            height: 40px;
+            background-color: crimson;
+            animation: shining 3s 5s infinite ease-in-out;
+            left: -300px;
+        }
+        .starsign{
+            width: 50px;
+            height: 40px;
+            background-color: rgb(210, 20, 220);
+            animation: shining 3s 5s infinite ease-in-out;
+            left: -700px;
+            bottom:700px;
+        }
+        .mouse{
+            width: 50px;
+            height: 40px;
+            background-color: rgb(230, 244, 138);
+            animation: shining 3s 5s infinite ease-in-out;
+            left: -200px;
+            bottom:800px;
+        }
+        .starcup{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            animation: shining 3s 5s infinite ease-in-out;
+            left: -200px;
+        }
+        .key{
+            width: 50px;
+            height: 40px;
+            background-color: rgb(160, 127, 168);
+            animation: shining 3s 5s infinite ease-in-out;
+            left: -400px;
+            bottom:800px;
+        }
+        .phone{
+            width: 50px;
+            height: 40px;
+            background-color: rgb(137, 223, 208);
+            animation: shining 3s 5s infinite ease-in-out;
+            left: -600px;
+            bottom:800px;
+        }
+        .startissue{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(34, 238, 105);
+            animation: shining 3s 5s infinite ease-in-out;
+            right: -100px;
+        }
+        .charger{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(34, 238, 105);
+            animation: shining 3s 5s infinite ease-in-out;
+            left: -500px;
+            bottom: 1000px;
+        }
+        .tissue{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(21, 10, 12);
+            animation: shining 3s 5s infinite ease-in-out;
+            right: -100px;
+            bottom: 900px;
+        }
+        .diamond{
+                width: 120px;
+                height: 120px;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-bottom: 80px solid rgb(122, 228, 23);
+                position: relative;
+                animation: shining 3s 5s infinite ease-in-out;
+                clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                bottom: 500px;
+            }
+        @keyframes shining {
+            0%{
+                opacity: 0;
+                transform: scale(0);
+            }
+            50%{
+                opacity: 1;
+                box-shadow: 0 0 12px rgb(20, 14, 9);
+                transform: scale(1);
+            }
+            100%{
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="star"></div>
+    <div class="star stardrink"></div>
+    <div class="star starlink"></div>
+    <div class="star starcup"></div>
+    <div class="star startissue"></div>
+    <div class="star starr"></div>
+    <div class="star starsign"></div>
+    <div class="diamond"></div>
+    <div class="star tissue"></div>
+    <div class="star mouse"></div>
+    <div class="star key"></div>
+    <div class="star phone"></div>
+    <div class="star charger"></div>
+   
+    
+    
+</body>
+</html>

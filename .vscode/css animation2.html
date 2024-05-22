@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 2</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+            animation-name: demo;
+            animation-duration: 10s;
+            animation-delay: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes demo{
+            0%{
+                background-color: green;
+                transform: scale(0.4);
+                border-radius: 50%;
+            }
+            20%{
+                background-color: seagreen;
+            }
+            40%{
+                background-color: greenyellow;
+                border-radius: 10%;
+            }
+            50%{
+                transform: scale(1);
+            }
+            60%{
+                background-color: aqua;
+            }
+            80%{
+                background-color: skyblue;
+            }
+            90%{
+                background-color: rgb(235, 9, 9);
+            }
+            100%{
+                background-color: blue;
+                transform: scale(0.4);
+                border-radius: 50%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div></div>
+    
+</body>
+</html>
